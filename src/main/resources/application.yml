@@ -1,0 +1,25 @@
+server:
+  port: 8099
+
+  #milvus:
+  #  host: 192.168.3.17
+  #  port: 19530
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://api.deepseek.com/v1
+      api-key: sk-6a2b7eb8d0da46d5ac20bab7daf4d8ca
+      model-name: deepseek-reasoner
+      return-thinking: true
+      temperature: 0.7
+    streaming-chat-model:
+      base-url: https://api.deepseek.com/v1
+      api-key: sk-6a2b7eb8d0da46d5ac20bab7daf4d8ca
+      model-name: deepseek-reasoner
+      return-thinking: true
+      temperature: 0.7
+
+
+
+
+
