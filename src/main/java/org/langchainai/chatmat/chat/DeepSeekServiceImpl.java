@@ -44,6 +44,12 @@ public class DeepSeekServiceImpl {
     }
 
 
+    @GetMapping(value = "/chattools",produces = TEXT_EVENT_STREAM_VALUE)
+    public String chat(@RequestParam(value = "message", defaultValue = "算法的特性是什么") String message,@RequestParam("userid") Integer userid) {
+        return deepSeekMemory.chat(userid,message);
+    }
+
+
 
 
 }

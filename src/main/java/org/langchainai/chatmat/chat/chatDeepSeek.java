@@ -17,15 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/chatDeepSeek")
 public class chatDeepSeek {
 
-//    @Autowired
-//    private OpenAiChatModel openAiChatModel;
-//
-//
-//
-//    @GetMapping("/chat")
-//    public String chat(@RequestParam String question) {
-//
-//        return openAiChatModel.chat(question);
-//    }
+    @Autowired
+    private OpenAiChatModel openAiChatModel;
+
+
+
+    @GetMapping("/chat")
+    public String chat(@RequestParam String question) {
+
+        return openAiChatModel.chat(question);
+    }
 
 }

@@ -14,4 +14,6 @@ public interface DeepSeekMemory {
      */
     @SystemMessage("你是一个心里专家")
     String chatwithMemory(@MemoryId int memoryId, @UserMessage String question);
+
+    String chat(@MemoryId int memoryId,@UserMessage  String message);
 }
