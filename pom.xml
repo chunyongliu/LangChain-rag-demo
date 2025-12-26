@@ -61,6 +61,14 @@
             </exclusions>
         </dependency>
 
+
+        <!-- Redis支持 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-reactor</artifactId>
@@ -72,6 +80,13 @@
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-milvus</artifactId>
             <version>1.9.1-beta17</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
 
 
